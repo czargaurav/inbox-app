@@ -48,4 +48,4 @@ jobs:
         run: docker build -t inbox-app .
         
       - name: Step 7 - Docker push
-        run: docker push czargaurav/my-first-repo:inbox-app
+        run: docker push inbox-app:latest
