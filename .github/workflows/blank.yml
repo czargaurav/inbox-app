@@ -18,8 +18,6 @@ jobs:
   
   # This workflow contains a single job called "build"
   build:
-    strategy:
-      max-parallel: 1
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -45,11 +43,7 @@ jobs:
           cd target
           ls -a
   
-  docker:
-    strategy:
-      max-parallel: 1
-    runs-on: ubuntu-latest
-    steps:
+  
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
