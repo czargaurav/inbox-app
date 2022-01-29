@@ -14,10 +14,10 @@ spring:
       password: e5K.mkL-W6O157XM8SH_SjOZ-IoQto.vt2AJJYZlLJ,sws9rKrXtJubdT8rBg4YjyreChd0OeH-szJhyNZYk,_1yPAg-1,lDKhcva4N7K+E9,+upTJZSw3tbEpAO5ogP
       schema-action: recreate_drop_unused
       request:
-        timeout: 10s
+        timeout: 20s
       connection:
-        connect-timeout: 10s
-        init-query-timeout: 10s
+        connect-timeout: 20s
+        init-query-timeout: 20s
 
 astra.db:
   id: eb837ceb-4fec-4be3-bd7b-d9ec101907e9-1

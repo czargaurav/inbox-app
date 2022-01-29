@@ -1,5 +1,9 @@
 package io.czargaurav.inbox;
 
+import com.datastax.oss.driver.api.core.uuid.Uuids;
+import io.czargaurav.inbox.emaillist.EmailListItem;
+import io.czargaurav.inbox.emaillist.EmailListItemKey;
+import io.czargaurav.inbox.emaillist.EmailListItemRepository;
 import io.czargaurav.inbox.folders.Folder;
 import io.czargaurav.inbox.folders.FolderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,12 +14,15 @@ import org.springframework.context.annotation.Bean;
 
 import javax.annotation.PostConstruct;
 import java.nio.file.Path;
+import java.util.Arrays;
 
 @SpringBootApplication
 public class InboxApp {
 
 	@Autowired
 	private FolderRepository folderRepository;
+	@Autowired
+	private EmailListItemRepository emailListItemRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(InboxApp.class, args);
@@ -32,5 +39,20 @@ public class InboxApp {
 		folderRepository.save(new Folder("czargaurav", "Inbox", "blue"));
 		folderRepository.save(new Folder("czargaurav", "Sent", "green"));
 		folderRepository.save(new Folder("czargaurav", "Important", "yellow"));
+
+		for(int i = 0; i < 10; i++) {
+			EmailListItemKey key = new EmailListItemKey();
+			key.setId("czargaurav");
+			key.setLabel("Inbox");
+			key.setTimeUUID(Uuids.timeBased());
+
+			EmailListItem item = new EmailListItem();
+			item.setKey(key);
+			item.setSubject("Subject "+i);
+			item.setTo(Arrays.asList("czargaurav"));
+			item.setUnread(true);
+
+			emailListItemRepository.save(item);
+		}
 	}
 }
