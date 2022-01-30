@@ -31,7 +31,7 @@ public class InboxApp {
 	}
 
 	@Bean
-	public CqlSessionBuilderCustomizer sessionBuilderCustomizer(DataStaxAstraProperties astraProperties) {
+	public CqlSessionBuilderCustomizer sessionBuilderCustomizer(/*DataStaxAstraProperties astraProperties*/) {
 		//Path bundle = astraProperties.getSecureConnectBundle().toPath();
 		return builder -> {
             try {
