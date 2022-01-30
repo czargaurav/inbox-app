@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa783190-fbcf-44d4-8fd9-dd48d4b5f921" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inbox-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/inbox-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/DataStaxAstraProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/DataStaxAstraProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/InboxApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/InboxApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/controllers/InboxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/controllers/InboxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/inbox-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/inbox-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="23SrGiuwbEYulGc5FEuZi2z9w4q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -108,6 +109,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="inbox-app" target="17" />
+      <module name="inbox-app" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

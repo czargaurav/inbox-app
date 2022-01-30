@@ -13,6 +13,8 @@ import org.springframework.boot.autoconfigure.cassandra.CqlSessionBuilderCustomi
 import org.springframework.context.annotation.Bean;
 
 import javax.annotation.PostConstruct;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.nio.file.Path;
 import java.util.Arrays;
 
@@ -30,8 +32,14 @@ public class InboxApp {
 
 	@Bean
 	public CqlSessionBuilderCustomizer sessionBuilderCustomizer(DataStaxAstraProperties astraProperties) {
-		Path bundle = astraProperties.getSecureConnectBundle().toPath();
-		return builder -> builder.withCloudSecureConnectBundle(bundle);
+		//Path bundle = astraProperties.getSecureConnectBundle().toPath();
+		return builder -> {
+            try {
+                builder.withCloudSecureConnectBundle(new URL("classpath:secure-connect.zip"));
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+        };//builder.withCloudSecureConnectBundle(bundle);
 	}
 
 	@PostConstruct
