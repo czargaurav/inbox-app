@@ -45,7 +45,7 @@ jobs:
           password: Pizzafrenzy@123
       
       - name: Step 6 - Docker build
-        run: docker build -t czargaurav/my-first-repo .
+        run: docker build -t czargaurav/inbox-app .
         
       - name: Step 7 - Docker push
-        run: docker push czargaurav/my-first-repo:latest
+        run: docker push czargaurav/inbox-app:latest

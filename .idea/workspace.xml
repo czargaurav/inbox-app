@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa783190-fbcf-44d4-8fd9-dd48d4b5f921" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/blank.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/blank.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inbox-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/inbox-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/DataStaxAstraProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/DataStaxAstraProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/InboxApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/InboxApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
