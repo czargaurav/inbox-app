@@ -1,6 +1,8 @@
 package io.czargaurav.inbox;
 
 import com.datastax.oss.driver.api.core.uuid.Uuids;
+import io.czargaurav.inbox.email.Email;
+import io.czargaurav.inbox.email.EmailRepository;
 import io.czargaurav.inbox.emaillist.EmailListItem;
 import io.czargaurav.inbox.emaillist.EmailListItemKey;
 import io.czargaurav.inbox.emaillist.EmailListItemRepository;
@@ -15,7 +17,6 @@ import org.springframework.context.annotation.Bean;
 import javax.annotation.PostConstruct;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.Path;
 import java.util.Arrays;
 
 @SpringBootApplication
@@ -25,6 +26,8 @@ public class InboxApp {
 	private FolderRepository folderRepository;
 	@Autowired
 	private EmailListItemRepository emailListItemRepository;
+	@Autowired
+	private EmailRepository emailRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(InboxApp.class, args);
@@ -53,14 +56,20 @@ public class InboxApp {
 			key.setId("czargaurav");
 			key.setLabel("Inbox");
 			key.setTimeUUID(Uuids.timeBased());
-
 			EmailListItem item = new EmailListItem();
 			item.setKey(key);
 			item.setSubject("Subject "+i);
-			item.setTo(Arrays.asList("czargaurav"));
+			item.setTo(Arrays.asList("czargaurav", "jhon", "jack"));
 			item.setUnread(true);
-
 			emailListItemRepository.save(item);
+
+			Email email = new Email();
+			email.setId(key.getTimeUUID());
+			email.setFrom("czargaurav");
+			email.setSubject(item.getSubject());
+			email.setBody("Body "+i);
+			email.setTo(item.getTo());
+			emailRepository.save(email);
 		}
 	}
 }

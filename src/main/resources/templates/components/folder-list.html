@@ -10,7 +10,7 @@
         <div class="card-body">
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center" th:each="folder :${folders}">
-                    <span th:text="${folder.label}">Label</span>
+                    <a th:href="@{'/?folder=' + ${folder.label}}" th:text="${folder.label}">Label</a>
                     <span class="badge bg-primary rounded-pill">14</span>
                 </li>
             </ul>

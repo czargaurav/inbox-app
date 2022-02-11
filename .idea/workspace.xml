@@ -5,18 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa783190-fbcf-44d4-8fd9-dd48d4b5f921" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/InboxApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/InboxApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/controllers/InboxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/czargaurav/inbox/controllers/InboxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/components/folder-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/components/folder-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/inbox-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/inbox-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,12 +59,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643528590868</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wf">
+      <created>1643530320782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643530320782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
